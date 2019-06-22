@@ -9,7 +9,9 @@ import javax.transaction.Transactional;
 /**
  * Created by LaunchCode
  */
-@Repository
-@Transactional
+
+@Repository // Create a concrete class that implements this interface.
+@Transactional // All of the methods within this database should be wrapped by a database transaction.
 public interface CheeseDao extends CrudRepository<Cheese, Integer> {
+
 }
